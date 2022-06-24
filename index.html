@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -16,8 +17,8 @@
         </video>
 
         <div class="controls">
-            <button class="controls__play-pause">Play/Pause</button>
-            <button class="controls__stop">Stop</button>
+            <button class="controls__play-pause" id="playPauseBtn" data-video-state="pause">Play/Pause</button>
+            <button class="controls__stop" id="stopBtn">Stop</button>
 
             <div class="controls__progress">
                 <progress id="progress" value="0" min="0">
@@ -25,9 +26,9 @@
                 </progress>
             </div>
 
-            <button class="controls__mute">Mute</button>
-            <button class="controls__minus">Minus</button>
-            <button class="controls__plus">Plus</button>
+            <button class="controls__mute" id="muteBtn">Mute</button>
+            <button class="controls__minus" id="minusBtn">Minus</button>
+            <button class="controls__plus" id="plusBtn">Plus</button>
 
         </div>
     </div>
